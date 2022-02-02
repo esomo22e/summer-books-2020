@@ -1,14 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+body{
+	background: linear-gradient(to bottom,#f3a183,#ec6f66,#e9c188,#a83279,#f49d50);
+
+}
 t.svelte-chart-container  {
 	max-width: 1000px;
 	margin: 1.5rem auto 0;
 	color: #333;
 	font-family: "akkurat", -apple-system, sans-serif;
 	position:relative;
+
 }
 
 .svelte-chart-container *+* {
-	margin: 0 auto 1rem;
+	/* margin: 1rem auto; */
+	margin: 2rem auto 1em;
 	position:relative;
+	/* padding: 0.25em; */
+
 }
 
 .svelte-chart-container .tick text {
@@ -19,6 +32,8 @@ t.svelte-chart-container  {
 body.dev-index {
 	margin:0;
 	padding:0;
+	background: linear-gradient(to bottom,#f3a183,#ec6f66,#e9c188,#a83279,#f49d50);
+
 }
 
 body.dev-index footer {
@@ -26,3 +41,159 @@ body.dev-index footer {
 	background-color: black;
 	height:400px;
 }
+
+.article-body {
+    max-width: 100%;
+}
+#book-tile{
+	/* border-radius: 25% 20px; */
+border-radius:25px;
+	border-left: 12px solid #4b3a82;
+	background:#F0F8FF;
+	/* margin: 40px; */
+	display: flex;
+	/* width: 98%; */
+padding: 0 20px;
+margin: 0.6em;
+box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.img-cont{
+	padding: 20px;
+}
+img.tile-image{
+max-width: 14.5em;
+display: block;
+position: static;
+/* margin: 1em auto; */
+margin: 2em auto;
+}
+
+#book-title{
+	font-size: 1.3em;
+	font-weight: 1000;
+color: #a83279;
+/* font-family: "akkurat", -apple-system, sans-serif; */
+/* font-family: 'Nunito', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+font-family: 'Rubik', sans-serif;
+
+text-align:left;
+line-height: 1.1em;
+}
+
+#book-title > a{
+	/* text-decoration: none; */
+	color: #a83279;
+}
+#book-rec{
+	text-decoration: none;
+}
+
+#book-author{
+	font-size: .6em;
+letter-spacing: .1em;
+text-transform: uppercase;
+margin: 10px 0;
+/* font-family: 'Nunito', sans-serif; */
+font-family: 'Rubik', sans-serif;
+line-height: 1.2em;
+/* font-family: 'Montserrat', sans-serif; */
+
+
+}
+
+#book-desc{
+font-size: 0.85em;
+/* margin-bottom: 1.777777777777778em; */
+/* line-height: 1.333333333333333; */
+margin: 0.75rem auto 0;
+/* font-family: 'Rubik', sans-serif; */
+    font-family: 'Noto Serif JP', serif;
+line-height: 1.2em;
+}
+
+#book-rec{
+	color: #a83279;
+	font-weight: bold;
+	margin: 0;
+	/* margin: 10px 0 5px 0; */
+	font-size: 1em;
+	/* font-family: 'Nunito', sans-serif; */
+	font-family: 'Rubik', sans-serif;
+	  font-style: italic;
+	/* font-family: 'Montserrat', sans-serif; */
+
+	/* text-align: right; */
+/* margin: 20px; */
+width: 100%;
+
+}
+
+#book-rec-info{
+	color: #a83279;
+	font-weight: bold;
+	margin: 0px 0px;
+	font-size: 0.6em;
+	/* font-family: 'Nunito', sans-serif; */
+	font-family: 'Rubik', sans-serif;
+	  font-style: italic;
+	/* font-family: 'Montserrat', sans-serif; */
+
+	/* text-align: right; */
+/* margin: 20px; */
+width: 100%;
+
+}
+
+#book-genre{
+	margin: 15px 0 0;
+	font-family: 'Rubik', sans-serif;
+	font-size: 14px;
+	color: #a83279;
+
+}
+#recommender-cont{
+	margin: 0.8em 0;
+}
+@media screen and (max-width:900px) {
+	#book-tile{
+		width: 90vw;
+		margin: 10px 0;
+		/* margin: 20px; */
+		grid-template-columns: repeat(1, 0.5fr);
+		padding: 20px;
+		/* margin: 20px; */
+	}
+
+	.svelte-chart-container *+* {
+		padding:0;
+		margin: 2rem auto;
+	}
+
+	#recommender-cont{
+		margin: 30px 0;
+	}
+
+
+}
+
+@media screen and (max-width:600px) {
+	#book-tile{
+		flex-flow: wrap;
+
+	}
+	.img-cont{
+		display: block;
+  margin-left: auto;
+  margin-right: auto;
+	}
+	.svelte-chart-container *+* {
+		padding:0;
+		margin: auto;
+	}
+}
+
+/* #book-att{
+	color: #6495ED;
+	font-weight: bold;
+} */
